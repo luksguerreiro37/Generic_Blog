@@ -1,0 +1,198 @@
+.postSection{
+    order: 3;
+    min-width: 90vw;
+    max-width: 713px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 5vw;
+}
+.postSection__title{
+    font-weight: var(--title1-font-weight);
+    font-size: var(--title1-font-size);
+    line-height: var(--title1-line-height);
+    color: var(--gray-1);
+    order: 0;
+}
+
+.post__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 713px;
+    order: 1;
+    align-self: stretch;
+    margin-bottom: 50px;
+}
+.post__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    max-width: 720px;
+    width: 90%;
+}
+.post__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    align-self: stretch;
+    order: 1;
+    width: 100%;
+}
+.post__title{
+    font-weight: var(--title1-font-weight); 
+    font-size: var(--title1-font-size);
+    line-height: var(--title1-line-height);
+    color: var(--gray-1);
+    order: 0;
+    width: 100%;
+    word-wrap: break-word;
+}
+.post__text{
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
+    color: var(--gray-2);
+    order: 1;
+    height: 52px;
+    width: 90vw;
+    max-width: 713px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: clip "...";
+    width: 100%;
+    word-wrap: break-word;
+}
+.post__buttons{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin-bottom: 85px;
+    order: 2;
+}
+.show__post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 92px;
+    height: 38px;
+    background: var(--gray-1);
+    border: 2px solid var(--gray-1);
+    border-radius: 4px;
+    order: 0;
+    font-weight: var(--title2-font-weight);
+    font-size: var(title2-font-size);
+    line-height: var(title2-line-height);
+    color: var(--white-fixed);
+    cursor: pointer;
+}
+.like__button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+    order: 1;
+}
+.heart{
+    width: 22.76px;
+    height: 20px;
+    cursor: pointer;
+    order: 0;
+}
+.like__button p{
+    font-weight: var(--text2-font-weight);
+    font-size: var(--text2-font-size);
+    line-height: var(--text2-line-height);
+    color: var(-gray-0);
+    order: 1;
+}
+.modal::backdrop{
+    background-color: rgba(33, 37, 41, 0.5);
+}
+dialog .post__title{
+    margin-bottom: 20px;
+}
+dialog .modal__text{
+    width: 100%;
+    max-width: 713px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.post__modal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+    gap: 32px;
+    position: fixed;
+    width: 90vw;
+    max-width: 761px;
+    height: auto;
+    top: 100px;
+    left: 50vw;
+    margin-left: -45vw;
+    background-color: var(--white-fixed);
+    border-radius: 8px;
+    border: none;
+    backdrop-filter: rgba(33, 37, 41, 0.5);
+}
+
+.modal__content{
+    width: 100%;
+    height: 50vh;
+    order: 1;
+    align-self: center;
+    overflow: auto;
+    gap: 20px;
+}
+.modal__text{
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
+    color: var(--gray-2);
+    order: 1;
+    height: 52px;
+    width: 50vw;
+    max-width: 713px;
+}
+.modal__title{
+    font-weight: var(--title1-font-weight);
+    font-size: var(--title1-font-size);
+    line-height: var(--title1-line-height);
+    color: var(--gray-1);
+    width: 713px;
+}
+.close__modal{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    width: 40px;
+    height: 40px;
+    background: var(--gray-5);
+    border-radius: 150px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.close__modal:hover{
+    background-color: var(--gray-4);
+}

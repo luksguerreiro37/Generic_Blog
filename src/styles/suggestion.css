@@ -1,0 +1,89 @@
+.suggestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 66px;
+    align-self: stretch;
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    background-color: var(--grey-1);
+    order: 2;
+    margin-left: 5vw;
+}
+.suggestion__title{
+    font-weight: var(--title2-font-weight);
+    font-size: var(--title2-font-size);
+    line-height: var(--title2-line-height);
+    color: var(--grey-1);
+}
+.suggestion__user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 20px;
+    min-width: 178px;
+    min-width: 225px;
+    width: 30vw;
+    max-width: 400px;
+    min-height: 100px;
+}
+.unfollow__user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 68px;
+    height: 28px;
+    border: 1px solid var(--gray-1);
+    border-radius: 2px;
+    
+    font-weight: var(--text2-font-weight);
+    font-size: var(--text2-font-size);
+    line-height: var(--text2-line-height);
+    cursor: pointer;
+    background-color: var(--white-fixed);
+}
+.unfollow__user:hover{
+    border: 1px solid var(--brand-1);
+    color: var(--brand-1);
+    background-color: #EDF2FF;
+}
+.follow__user{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 10px;
+    width: 89px;
+    height: 28px;
+    color: var(--white-fixed);
+    background-color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    border-radius: 2px;
+    
+    font-weight: var(--text2-font-weight);
+    font-size: var(--text2-font-size);
+    line-height: var(--text2-line-height);
+    cursor: pointer;   
+}
+.suggestion__profiles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 36px;
+    min-width: 20px;
+    width: 90vw;
+    max-width: 421px;
+    min-height: 120px;
+    height: 30vw;
+    max-height: 390px;
+    overflow: auto;
+}

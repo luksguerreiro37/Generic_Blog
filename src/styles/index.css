@@ -1,0 +1,57 @@
+@import url(./nav.css);
+@import url(./suggestion.css);
+@import url(./userArea.css);
+@import url(./postSection.css);
+:root{
+    --brand-1: #4263EB;
+    --brand-2: #364FC7;
+    --gray-0: #0A0C0D;
+    --gray-1: #212529;
+    --gray-2: #495057;
+    --gray-3: #868E96;
+    --gray-4: #DEE2E6;
+    --gray-5: #F8F9FA;
+    --backdrop: rgba(33, 37, 41, 0.5);
+    --white-fixed: #FFFFFF;
+
+    --title1-font-weight: 700;
+    --title1-font-size: 1.75rem;
+    --title1-line-height: 2.5rem;
+
+    --title2-font-weight: 600;
+    --title2-font-size:1.25rem;
+    --title2-line-height: 1.5rem;
+
+    --text1-font-weight:400;
+    --text1-font-size:1rem;
+    --text1-line-height:1.75;
+
+    --text2-font-weight:400;
+    --text2-font-size:0.875rem;
+    --text2-line-height:1rem;
+
+    --text3-font-weight:400;
+    --text3-font-size:0.75rem;
+    --text3-line-height:1rem;
+}
+html{
+    overflow-x: hidden;
+}
+ *{
+    font-family: 'Inter', sans-serif;
+ }
+ body{
+    background-color: var(--white-fixed);
+    border-radius: 8px;
+    position: relative;
+ }
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    left: 0;
+    width: 100vw;
+    padding-top: 120px;
+}
+
